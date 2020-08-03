@@ -210,10 +210,7 @@ export function run(
 }
 
 if (!module.parent) {
-  const downloadUrl = getOptionalString(
-    'downloadUrl',
-    DOWNLOAD_URL
-  );
+  const downloadUrl = getOptionalString('downloadUrl', DOWNLOAD_URL);
   const coverageCommand = getOptionalString(
     'coverageCommand',
     DEFAULT_COVERAGE_COMMAND

@@ -5,6 +5,10 @@ branding:
   icon: 'code'
   color: 'gray-dark'
 inputs:
+  downloadUrl:
+    required: false
+    description: 'URL for the test reporter.'
+    default: 'automatic'
   coverageCommand:
     required: false
     description: 'Coverage command to execute'

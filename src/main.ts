@@ -210,6 +210,10 @@ export function run(
 }
 
 if (!module.parent) {
+  const downloadUrl = getOptionalString(
+    'downloadUrl',
+    DOWNLOAD_URL
+  );
   const coverageCommand = getOptionalString(
     'coverageCommand',
     DEFAULT_COVERAGE_COMMAND
@@ -225,7 +229,7 @@ if (!module.parent) {
   const coveragePrefix = getOptionalString('prefix');
 
   run(
-    DOWNLOAD_URL,
+    downloadUrl,
     EXECUTABLE,
     coverageCommand,
     codeClimateDebug,
